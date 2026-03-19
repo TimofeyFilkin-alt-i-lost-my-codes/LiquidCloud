@@ -258,8 +258,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Ignore",
@@ -566,8 +565,7 @@
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           },
                           {
                             "name": "MovementCorrection",
@@ -616,8 +614,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -744,8 +741,7 @@
                 "name": "Horizon",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "LiteralNPC",
@@ -889,8 +885,7 @@
                 "name": "Blink",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "VoidLevel",
@@ -1068,6 +1063,10 @@
                 "value": true
               },
               {
+                "name": "ThroughWalls",
+                "value": true
+              },
+              {
                 "name": "Target",
                 "value": [
                   {
@@ -1237,8 +1236,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "MovementCorrection",
@@ -1561,6 +1559,10 @@
               {
                 "name": "ConsiderAbsorption",
                 "value": true
+              },
+              {
+                "name": "Enchanted",
+                "value": true
               }
             ]
           },
@@ -1787,8 +1789,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -1857,8 +1858,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Placing",
@@ -1888,7 +1888,10 @@
               },
               {
                 "name": "Sneak",
-                "value": 1
+                "value": {
+                  "from": 1,
+                  "to": 1
+                }
               },
               {
                 "name": "Ignore",
@@ -2067,8 +2070,7 @@
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           },
                           {
                             "name": "MovementCorrection",
@@ -2103,8 +2105,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "Support",
@@ -2325,8 +2326,7 @@
                                       }
                                     ]
                                   }
-                                },
-                                "valueType": "CHOICE"
+                                }
                               },
                               {
                                 "name": "MovementCorrection",
@@ -2365,8 +2365,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   }
                 ]
               }
@@ -2952,8 +2951,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -3019,6 +3017,38 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "AutoGolemRepair",
+        "value": [
+          {
+            "name": "Enabled",
+            "value": false
+          },
+          {
+            "name": "Range",
+            "value": 4.5
+          },
+          {
+            "name": "HealthThreshold",
+            "value": 75.0
+          },
+          {
+            "name": "Delay",
+            "value": {
+              "from": 4,
+              "to": 4
+            }
+          },
+          {
+            "name": "SlotResetDelay",
+            "value": 2
+          },
+          {
+            "name": "SwingMode",
+            "value": "DoNotHide"
           }
         ]
       },
@@ -3215,8 +3245,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "MovementCorrection",
@@ -3355,10 +3384,14 @@
                                 "name": "Name",
                                 "value": [
                                   {
-                                    "name": "Name",
+                                    "name": "Names",
                                     "value": [
                                       "Paper"
                                     ]
+                                  },
+                                  {
+                                    "name": "Mode",
+                                    "value": "Equals"
                                   }
                                 ]
                               },
@@ -3366,15 +3399,14 @@
                                 "name": "Item",
                                 "value": [
                                   {
-                                    "name": "Item",
+                                    "name": "Items",
                                     "value": [
                                       "minecraft:paper"
                                     ]
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           }
                         ]
                       },
@@ -3396,8 +3428,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "Action",
@@ -3441,10 +3472,14 @@
                                 "name": "Name",
                                 "value": [
                                   {
-                                    "name": "Name",
+                                    "name": "Names",
                                     "value": [
                                       "Paper"
                                     ]
+                                  },
+                                  {
+                                    "name": "Mode",
+                                    "value": "Equals"
                                   }
                                 ]
                               },
@@ -3452,20 +3487,18 @@
                                 "name": "Item",
                                 "value": [
                                   {
-                                    "name": "Item",
+                                    "name": "Items",
                                     "value": [
                                       "minecraft:paper"
                                     ]
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "Control",
@@ -3490,8 +3523,16 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
+          },
+          {
+            "name": "Pause",
+            "value": [
+              "ClickGuiOpen",
+              "ChatScreenOpen",
+              "ContainerScreenOpen",
+              "PauseScreenOpen"
+            ]
           }
         ]
       },
@@ -3861,8 +3902,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -4246,8 +4286,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -4276,7 +4315,7 @@
             "value": true
           },
           {
-            "name": "TicksUntillSlotReset",
+            "name": "TicksUntilSlotReset",
             "value": 1
           },
           {
@@ -4348,8 +4387,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "ExtraCategorySwitchDelay",
@@ -4440,8 +4478,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Filter",
@@ -4479,6 +4516,10 @@
           },
           {
             "name": "RequireSneaking",
+            "value": false
+          },
+          {
+            "name": "NotDuringCombat",
             "value": false
           },
           {
@@ -4706,8 +4747,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -4947,8 +4987,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "MovementCorrection",
@@ -4985,6 +5024,10 @@
           {
             "name": "Enabled",
             "value": false
+          },
+          {
+            "name": "Mode",
+            "value": "Shape"
           },
           {
             "name": "Avoid",
@@ -5081,7 +5124,18 @@
               },
               "Color": {
                 "name": "Color",
-                "value": []
+                "value": [
+                  {
+                    "name": "Slots",
+                    "value": [
+                      "Head"
+                    ]
+                  },
+                  {
+                    "name": "Loose",
+                    "value": false
+                  }
+                ]
               },
               "SpawnLocation": {
                 "name": "SpawnLocation",
@@ -5105,8 +5159,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Place",
@@ -5136,7 +5189,10 @@
               },
               {
                 "name": "Sneak",
-                "value": 1
+                "value": {
+                  "from": 1,
+                  "to": 1
+                }
               },
               {
                 "name": "Ignore",
@@ -5315,8 +5371,7 @@
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           },
                           {
                             "name": "MovementCorrection",
@@ -5351,8 +5406,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "DestroyCrystals",
@@ -5544,8 +5598,7 @@
                                       }
                                     ]
                                   }
-                                },
-                                "valueType": "CHOICE"
+                                }
                               },
                               {
                                 "name": "MovementCorrection",
@@ -5584,8 +5637,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   }
                 ]
               }
@@ -5683,7 +5735,10 @@
               },
               {
                 "name": "Sneak",
-                "value": 1
+                "value": {
+                  "from": 1,
+                  "to": 1
+                }
               },
               {
                 "name": "Ignore",
@@ -5862,8 +5917,7 @@
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           },
                           {
                             "name": "MovementCorrection",
@@ -5898,8 +5952,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "Support",
@@ -6120,8 +6173,7 @@
                                       }
                                     ]
                                   }
-                                },
-                                "valueType": "CHOICE"
+                                }
                               },
                               {
                                 "name": "MovementCorrection",
@@ -6160,8 +6212,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   }
                 ]
               }
@@ -6192,8 +6243,7 @@
                 "name": "TopBottom",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Filter",
@@ -6267,7 +6317,10 @@
               },
               {
                 "name": "Sneak",
-                "value": 1
+                "value": {
+                  "from": 1,
+                  "to": 1
+                }
               },
               {
                 "name": "Ignore",
@@ -6446,8 +6499,7 @@
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           },
                           {
                             "name": "MovementCorrection",
@@ -6482,8 +6534,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "Support",
@@ -6700,8 +6751,7 @@
                                       }
                                     ]
                                   }
-                                },
-                                "valueType": "CHOICE"
+                                }
                               },
                               {
                                 "name": "MovementCorrection",
@@ -6740,8 +6790,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   }
                 ]
               }
@@ -6866,14 +6915,12 @@
                     "value": true
                   },
                   {
-                    "dialogMode": "OPEN_FILE",
                     "name": "Source",
                     "value": ""
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Sign",
@@ -6891,6 +6938,112 @@
           {
             "name": "Delay",
             "value": 0.5
+          }
+        ]
+      },
+      {
+        "name": "ChestCleaner",
+        "value": [
+          {
+            "name": "Enabled",
+            "value": false
+          },
+          {
+            "name": "Filter",
+            "value": "Whitelist"
+          },
+          {
+            "name": "Items",
+            "value": []
+          },
+          {
+            "name": "AutoClose",
+            "value": true
+          },
+          {
+            "name": "Constraints",
+            "value": [
+              {
+                "name": "StartDelay",
+                "value": {
+                  "from": 1,
+                  "to": 2
+                }
+              },
+              {
+                "name": "ClickDelay",
+                "value": {
+                  "from": 2,
+                  "to": 4
+                }
+              },
+              {
+                "name": "CloseDelay",
+                "value": {
+                  "from": 1,
+                  "to": 2
+                }
+              },
+              {
+                "name": "MissChance",
+                "value": {
+                  "from": 0,
+                  "to": 0
+                }
+              },
+              {
+                "name": "Requires",
+                "value": []
+              }
+            ]
+          },
+          {
+            "name": "CheckScreenHandlerType",
+            "value": [
+              {
+                "name": "Enabled",
+                "value": true
+              },
+              {
+                "name": "Types",
+                "value": [
+                  "minecraft:generic_9x3",
+                  "minecraft:generic_9x6",
+                  "minecraft:shulker_box"
+                ]
+              },
+              {
+                "name": "Filter",
+                "value": "Whitelist"
+              }
+            ]
+          },
+          {
+            "name": "CheckScreenTitle",
+            "value": [
+              {
+                "name": "Enabled",
+                "value": true
+              },
+              {
+                "name": "Titles",
+                "value": [
+                  "Barrel",
+                  "Chest",
+                  "LargeChest",
+                  "ShulkerBox",
+                  "ChestMinecart"
+                ]
+              },
+              {
+                "name": "Custom",
+                "value": []
+              },
+              {
+                "name": "Filter",
+                "value": "Whitelist"
+              }
+            ]
           }
         ]
       },
@@ -7027,8 +7180,8 @@
                 "value": 5
               },
               {
-                "name": "VisualSwing",
-                "value": true
+                "name": "SwingMode",
+                "value": "DoNotHide"
               },
               {
                 "name": "NotDuringCombat",
@@ -7242,8 +7395,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "MovementCorrection",
@@ -7351,8 +7503,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -7447,8 +7598,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "WhenSprinting",
@@ -7712,8 +7862,7 @@
                         "name": "PredictOnly",
                         "value": []
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "CheckIntersect",
@@ -7758,8 +7907,7 @@
                         "name": "PredictOnly",
                         "value": []
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "CheckIntersect",
@@ -7903,7 +8051,10 @@
                   },
                   {
                     "name": "Sneak",
-                    "value": 1
+                    "value": {
+                      "from": 1,
+                      "to": 1
+                    }
                   },
                   {
                     "name": "Ignore",
@@ -8082,8 +8233,7 @@
                                       }
                                     ]
                                   }
-                                },
-                                "valueType": "CHOICE"
+                                }
                               },
                               {
                                 "name": "MovementCorrection",
@@ -8118,8 +8268,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "Support",
@@ -8340,8 +8489,7 @@
                                           }
                                         ]
                                       }
-                                    },
-                                    "valueType": "CHOICE"
+                                    }
                                   },
                                   {
                                     "name": "MovementCorrection",
@@ -8380,8 +8528,7 @@
                               }
                             ]
                           }
-                        },
-                        "valueType": "CHOICE"
+                        }
                       }
                     ]
                   }
@@ -8556,8 +8703,7 @@
                               }
                             ]
                           }
-                        },
-                        "valueType": "CHOICE"
+                        }
                       },
                       {
                         "name": "MovementCorrection",
@@ -8596,8 +8742,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -9032,8 +9177,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -9244,8 +9388,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -9469,8 +9612,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -9656,8 +9798,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -9741,8 +9882,7 @@
                 "name": "AbortAnother",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -9911,8 +10051,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "MovementCorrection",
@@ -9976,8 +10115,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "CombatPauseTime",
@@ -10060,8 +10198,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Conditions",
@@ -10397,8 +10534,7 @@
                               }
                             ]
                           }
-                        },
-                        "valueType": "CHOICE"
+                        }
                       },
                       {
                         "name": "MovementCorrection",
@@ -10625,8 +10761,7 @@
                                       }
                                     ]
                                   }
-                                },
-                                "valueType": "CHOICE"
+                                }
                               },
                               {
                                 "name": "MovementCorrection",
@@ -10852,8 +10987,7 @@
                                       }
                                     ]
                                   }
-                                },
-                                "valueType": "CHOICE"
+                                }
                               },
                               {
                                 "name": "MovementCorrection",
@@ -10875,8 +11009,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "Trigger",
@@ -10896,8 +11029,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "SlotResetDelay",
@@ -11122,8 +11254,7 @@
                 "name": "HycraftDamage",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Visuals",
@@ -11187,8 +11318,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "DisableOnFlag",
@@ -11293,7 +11423,18 @@
               },
               "Color": {
                 "name": "Color",
-                "value": []
+                "value": [
+                  {
+                    "name": "Slots",
+                    "value": [
+                      "Head"
+                    ]
+                  },
+                  {
+                    "name": "Loose",
+                    "value": false
+                  }
+                ]
               },
               "SpawnLocation": {
                 "name": "SpawnLocation",
@@ -11317,8 +11458,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Rotations",
@@ -11471,8 +11611,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -11551,8 +11690,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Motion",
@@ -11638,7 +11776,10 @@
               },
               {
                 "name": "Sneak",
-                "value": 1
+                "value": {
+                  "from": 1,
+                  "to": 1
+                }
               },
               {
                 "name": "Ignore",
@@ -11817,8 +11958,7 @@
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           },
                           {
                             "name": "MovementCorrection",
@@ -11853,8 +11993,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "DestroyCrystals",
@@ -12046,8 +12185,7 @@
                                       }
                                     ]
                                   }
-                                },
-                                "valueType": "CHOICE"
+                                }
                               },
                               {
                                 "name": "MovementCorrection",
@@ -12086,8 +12224,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   }
                 ]
               }
@@ -12640,8 +12777,7 @@
                             "name": "xskylite2",
                             "value": []
                           }
-                        },
-                        "valueType": "CHOICE"
+                        }
                       },
                       {
                         "name": "Correction",
@@ -12701,8 +12837,7 @@
                             "name": "None",
                             "value": []
                           }
-                        },
-                        "valueType": "CHOICE"
+                        }
                       },
                       {
                         "name": "OutputMultiplier",
@@ -12719,8 +12854,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "ShortStop",
@@ -12786,7 +12920,7 @@
               },
               {
                 "name": "ResetThreshold",
-                "value": 180.0
+                "value": 5.0
               },
               {
                 "name": "TicksUntilReset",
@@ -12966,18 +13100,22 @@
                 "value": "Fake"
               },
               {
+                "name": "SimulateVanillaUse",
+                "value": true
+              },
+              {
                 "name": "UnblockMode",
                 "value": "StopUsingItem"
               },
               {
-                "name": "TickOff",
+                "name": "Reblock",
                 "value": {
                   "from": 1,
                   "to": 1
                 }
               },
               {
-                "name": "TickOn",
+                "name": "PauseOnUnblock",
                 "value": {
                   "from": 1,
                   "to": 1
@@ -12990,6 +13128,10 @@
               {
                 "name": "Blink",
                 "value": 0
+              },
+              {
+                "name": "PrioritizeBlocking",
+                "value": true
               },
               {
                 "name": "OnScanRange",
@@ -13154,6 +13296,10 @@
               {
                 "name": "RespectInventorySetting",
                 "value": true
+              },
+              {
+                "name": "CanBeCovered",
+                "value": false
               }
             ]
           }
@@ -13201,8 +13347,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -13381,8 +13526,7 @@
                               }
                             ]
                           }
-                        },
-                        "valueType": "CHOICE"
+                        }
                       },
                       {
                         "name": "MovementCorrection",
@@ -13437,8 +13581,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "AutoJump",
@@ -13620,8 +13763,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "ResetFallDistance",
@@ -13679,8 +13821,7 @@
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           },
                           {
                             "name": "ResetFallDistance",
@@ -13692,8 +13833,7 @@
                         "name": "Always",
                         "value": []
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   }
                 ]
               },
@@ -13722,8 +13862,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "Timing",
@@ -13743,8 +13882,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   }
                 ]
               },
@@ -13906,8 +14044,7 @@
                               }
                             ]
                           }
-                        },
-                        "valueType": "CHOICE"
+                        }
                       },
                       {
                         "name": "MovementCorrection",
@@ -13935,6 +14072,43 @@
                         "value": {
                           "from": 200,
                           "to": 1000
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "Mount": {
+                "name": "Mount",
+                "value": [
+                  {
+                    "name": "MinFallDistance",
+                    "value": 5.0
+                  },
+                  {
+                    "name": "SearchRange",
+                    "value": 4.5
+                  },
+                  {
+                    "name": "RetryDelay",
+                    "value": 2
+                  },
+                  {
+                    "name": "SwingMode",
+                    "value": "DoNotHide"
+                  },
+                  {
+                    "name": "AutoDismount",
+                    "value": [
+                      {
+                        "name": "Enabled",
+                        "value": false
+                      },
+                      {
+                        "name": "Delay",
+                        "value": {
+                          "from": 0,
+                          "to": 0
                         }
                       }
                     ]
@@ -14004,8 +14178,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   },
                   {
                     "name": "ResetFallDistance",
@@ -14051,8 +14224,7 @@
                 "name": "Grim2371-1.9+",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Not",
@@ -14060,6 +14232,19 @@
               "WhileGliding",
               "WithMace"
             ]
+          }
+        ]
+      },
+      {
+        "name": "NoInterpolation",
+        "value": [
+          {
+            "name": "Enabled",
+            "value": false
+          },
+          {
+            "name": "ReduceBy",
+            "value": 3
           }
         ]
       },
@@ -14305,8 +14490,7 @@
                               }
                             ]
                           }
-                        },
-                        "valueType": "CHOICE"
+                        }
                       },
                       {
                         "name": "MovementCorrection",
@@ -14324,8 +14508,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -14419,8 +14602,7 @@
                     "name": "Intave14",
                     "value": []
                   }
-                },
-                "valueType": "CHOICE"
+                }
               }
             ]
           },
@@ -14486,8 +14668,7 @@
                     "name": "Release",
                     "value": []
                   }
-                },
-                "valueType": "CHOICE"
+                }
               }
             ]
           },
@@ -14531,8 +14712,7 @@
                     "name": "InvalidHand",
                     "value": []
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "NoBlockInteract",
@@ -14600,8 +14780,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               }
             ]
           },
@@ -14730,6 +14909,194 @@
                 "name": "Intave14",
                 "value": []
               },
+              "PlaceWater": {
+                "name": "PlaceWater",
+                "value": [
+                  {
+                    "name": "Rotations",
+                    "value": [
+                      {
+                        "name": "AngleSmooth",
+                        "active": "Linear",
+                        "value": [],
+                        "choices": {
+                          "Linear": {
+                            "name": "Linear",
+                            "value": [
+                              {
+                                "name": "HorizontalTurnSpeed",
+                                "value": {
+                                  "from": 180.0,
+                                  "to": 180.0
+                                }
+                              },
+                              {
+                                "name": "VerticalTurnSpeed",
+                                "value": {
+                                  "from": 180.0,
+                                  "to": 180.0
+                                }
+                              }
+                            ]
+                          },
+                          "Sigmoid": {
+                            "name": "Sigmoid",
+                            "value": [
+                              {
+                                "name": "HorizontalTurnSpeed",
+                                "value": {
+                                  "from": 180.0,
+                                  "to": 180.0
+                                }
+                              },
+                              {
+                                "name": "VerticalTurnSpeed",
+                                "value": {
+                                  "from": 180.0,
+                                  "to": 180.0
+                                }
+                              },
+                              {
+                                "name": "Steepness",
+                                "value": 10.0
+                              },
+                              {
+                                "name": "Midpoint",
+                                "value": 0.3
+                              }
+                            ]
+                          },
+                          "Acceleration": {
+                            "name": "Acceleration",
+                            "value": [
+                              {
+                                "name": "YawAcceleration",
+                                "value": {
+                                  "from": 20.0,
+                                  "to": 25.0
+                                }
+                              },
+                              {
+                                "name": "PitchAcceleration",
+                                "value": {
+                                  "from": 20.0,
+                                  "to": 25.0
+                                }
+                              },
+                              {
+                                "name": "DynamicAccel",
+                                "value": [
+                                  {
+                                    "name": "Enabled",
+                                    "value": false
+                                  },
+                                  {
+                                    "name": "CoefDistance",
+                                    "value": -1.393
+                                  },
+                                  {
+                                    "name": "YawCrosshairAccel",
+                                    "value": {
+                                      "from": 17.0,
+                                      "to": 20.0
+                                    }
+                                  },
+                                  {
+                                    "name": "PitchCrosshairAccel",
+                                    "value": {
+                                      "from": 17.0,
+                                      "to": 20.0
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "AccelerationError",
+                                "value": [
+                                  {
+                                    "name": "Enabled",
+                                    "value": true
+                                  },
+                                  {
+                                    "name": "YawAccelError",
+                                    "value": 0.1
+                                  },
+                                  {
+                                    "name": "PitchAccelError",
+                                    "value": 0.1
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "ConstantError",
+                                "value": [
+                                  {
+                                    "name": "Enabled",
+                                    "value": true
+                                  },
+                                  {
+                                    "name": "YawConstantError",
+                                    "value": 0.1
+                                  },
+                                  {
+                                    "name": "PitchConstantError",
+                                    "value": 0.1
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "SigmoidDeceleration",
+                                "value": [
+                                  {
+                                    "name": "Enabled",
+                                    "value": false
+                                  },
+                                  {
+                                    "name": "Steepness",
+                                    "value": 10.0
+                                  },
+                                  {
+                                    "name": "Midpoint",
+                                    "value": 0.3
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "MovementCorrection",
+                        "value": "Silent"
+                      },
+                      {
+                        "name": "ResetThreshold",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "TicksUntilReset",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pickup",
+                    "value": [
+                      {
+                        "name": "Enabled",
+                        "value": true
+                      },
+                      {
+                        "name": "PickupSpan",
+                        "value": {
+                          "from": 0.8,
+                          "to": 3.0
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
               "Strafe": {
                 "name": "Strafe",
                 "value": [
@@ -14756,8 +15123,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -14939,8 +15305,7 @@
                               }
                             ]
                           }
-                        },
-                        "valueType": "CHOICE"
+                        }
                       },
                       {
                         "name": "MovementCorrection",
@@ -14982,8 +15347,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "AreaMode",
@@ -15023,8 +15387,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Filter",
@@ -15313,8 +15676,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Range",
@@ -15367,8 +15729,7 @@
                 "name": "Never",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Rotate",
@@ -15525,8 +15886,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -15549,6 +15909,10 @@
           {
             "name": "BreakDamage",
             "value": 1.0
+          },
+          {
+            "name": "PostBreakDelay",
+            "value": 6
           },
           {
             "name": "AbortAlwaysDown",
@@ -15602,8 +15966,7 @@
                 "name": "BlocksMC",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -16365,8 +16728,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -16463,6 +16825,10 @@
             "value": 40
           },
           {
+            "name": "ReplenishEmpty",
+            "value": true
+          },
+          {
             "name": "Features",
             "value": [
               "CleanUp"
@@ -16525,8 +16891,7 @@
                     "name": "Heypixel",
                     "value": []
                   }
-                },
-                "valueType": "CHOICE"
+                }
               }
             ]
           }
@@ -16592,8 +16957,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "MaximumFallDistance",
@@ -16652,8 +17016,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -16853,8 +17216,10 @@
                 "name": "GodBridge",
                 "value": [
                   {
-                    "name": "Mode",
-                    "value": "Random"
+                    "name": "Modes",
+                    "value": [
+                      "Jump"
+                    ]
                   },
                   {
                     "name": "ForceSneakBelowCount",
@@ -16881,8 +17246,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "SameY",
@@ -16948,8 +17312,7 @@
                 "name": "Hypixel",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "SafeWalk",
@@ -16995,8 +17358,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Swing",
@@ -17153,8 +17515,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "MovementCorrection",
@@ -17434,8 +17795,7 @@
                 "name": "Switch",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "NotDuringMove",
@@ -17545,6 +17905,38 @@
                   {
                     "name": "Speed",
                     "value": 0.4
+                  }
+                ]
+              },
+              "PiercingAttack": {
+                "name": "PiercingAttack",
+                "value": [
+                  {
+                    "name": "SwingMode",
+                    "value": "DoNotHide"
+                  },
+                  {
+                    "name": "HoldTime",
+                    "value": {
+                      "from": 1,
+                      "to": 1
+                    }
+                  },
+                  {
+                    "name": "OnGround",
+                    "value": true
+                  },
+                  {
+                    "name": "IgnoreHunger",
+                    "value": false
+                  },
+                  {
+                    "name": "WaitForCooldown",
+                    "value": true
+                  },
+                  {
+                    "name": "MinimumDurability",
+                    "value": 1
                   }
                 ]
               },
@@ -17732,8 +18124,7 @@
                 "name": "Matrix7",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Not",
@@ -17848,6 +18239,38 @@
                       }
                     ]
                   },
+                  "PiercingAttack": {
+                    "name": "PiercingAttack",
+                    "value": [
+                      {
+                        "name": "SwingMode",
+                        "value": "DoNotHide"
+                      },
+                      {
+                        "name": "HoldTime",
+                        "value": {
+                          "from": 1,
+                          "to": 1
+                        }
+                      },
+                      {
+                        "name": "OnGround",
+                        "value": true
+                      },
+                      {
+                        "name": "IgnoreHunger",
+                        "value": false
+                      },
+                      {
+                        "name": "WaitForCooldown",
+                        "value": true
+                      },
+                      {
+                        "name": "MinimumDurability",
+                        "value": 1
+                      }
+                    ]
+                  },
                   "VerusB3882": {
                     "name": "VerusB3882",
                     "value": []
@@ -18032,8 +18455,7 @@
                     "name": "Matrix7",
                     "value": []
                   }
-                },
-                "valueType": "CHOICE"
+                }
               }
             ]
           },
@@ -18085,8 +18507,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "Mode",
@@ -18186,6 +18607,38 @@
                       }
                     ]
                   },
+                  "PiercingAttack": {
+                    "name": "PiercingAttack",
+                    "value": [
+                      {
+                        "name": "SwingMode",
+                        "value": "DoNotHide"
+                      },
+                      {
+                        "name": "HoldTime",
+                        "value": {
+                          "from": 1,
+                          "to": 1
+                        }
+                      },
+                      {
+                        "name": "OnGround",
+                        "value": true
+                      },
+                      {
+                        "name": "IgnoreHunger",
+                        "value": false
+                      },
+                      {
+                        "name": "WaitForCooldown",
+                        "value": true
+                      },
+                      {
+                        "name": "MinimumDurability",
+                        "value": 1
+                      }
+                    ]
+                  },
                   "VerusB3882": {
                     "name": "VerusB3882",
                     "value": []
@@ -18370,8 +18823,7 @@
                     "name": "Matrix7",
                     "value": []
                   }
-                },
-                "valueType": "CHOICE"
+                }
               }
             ]
           },
@@ -18424,8 +18876,7 @@
                 "name": "Vulcan288",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -18530,8 +18981,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -18552,6 +19002,63 @@
           },
           {
             "name": "StrictMovement",
+            "value": true
+          }
+        ]
+      },
+      {
+        "name": "StrongholdFinder",
+        "value": [
+          {
+            "name": "Enabled",
+            "value": false
+          },
+          {
+            "name": "Sigma",
+            "value": 0.03
+          },
+          {
+            "name": "HypothesisCount",
+            "value": 20000
+          },
+          {
+            "name": "RequireSameStrongholdAcrossThrows",
+            "value": true
+          },
+          {
+            "name": "SampleDelayTicks",
+            "value": 2
+          },
+          {
+            "name": "MinEyeHorizontalSpeed",
+            "value": 0.02
+          },
+          {
+            "name": "MaxSampleAgeTicks",
+            "value": 20
+          },
+          {
+            "name": "ShowTopCandidates",
+            "value": 3
+          },
+          {
+            "name": "RenderRays",
+            "value": true
+          },
+          {
+            "name": "RenderBestChunk",
+            "value": true
+          },
+          {
+            "name": "RenderTopChunks",
+            "value": true
+          },
+          {
+            "name": "AnnouncePrediction",
+            "value": true
+          },
+          {
+            "name": "ResetOnWorldChange",
             "value": true
           }
         ]
@@ -18603,8 +19110,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "HurtTime",
@@ -18732,7 +19238,10 @@
               },
               {
                 "name": "Sneak",
-                "value": 1
+                "value": {
+                  "from": 1,
+                  "to": 1
+                }
               },
               {
                 "name": "Ignore",
@@ -18911,8 +19420,7 @@
                                   }
                                 ]
                               }
-                            },
-                            "valueType": "CHOICE"
+                            }
                           },
                           {
                             "name": "MovementCorrection",
@@ -18947,8 +19455,7 @@
                       }
                     ]
                   }
-                },
-                "valueType": "CHOICE"
+                }
               },
               {
                 "name": "Support",
@@ -19172,8 +19679,7 @@
                                       }
                                     ]
                                   }
-                                },
-                                "valueType": "CHOICE"
+                                }
                               },
                               {
                                 "name": "MovementCorrection",
@@ -19212,8 +19718,7 @@
                           }
                         ]
                       }
-                    },
-                    "valueType": "CHOICE"
+                    }
                   }
                 ]
               }
@@ -19230,6 +19735,10 @@
           },
           {
             "name": "OnlyVisual",
+            "value": false
+          },
+          {
+            "name": "FakeOnPressing",
             "value": false
           }
         ]
@@ -19311,8 +19820,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Range",
@@ -19347,6 +19855,13 @@
           {
             "name": "ArmorColor",
             "value": []
+          },
+          {
+            "name": "ColorSources",
+            "value": [
+              "Team",
+              "Armor"
+            ]
           }
         ]
       },
@@ -19423,8 +19938,7 @@
                     "name": "Clip",
                     "value": []
                   }
-                },
-                "valueType": "CHOICE"
+                }
               }
             ]
           },
@@ -19647,8 +20161,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -19846,8 +20359,7 @@
                 "name": "Immediate",
                 "value": []
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Target",
@@ -20010,6 +20522,10 @@
                   {
                     "name": "TransactionBuffer",
                     "value": 1
+                  },
+                  {
+                    "name": "ConsiderExplosion",
+                    "value": true
                   }
                 ]
               },
@@ -20118,6 +20634,10 @@
                   {
                     "name": "JumpReset",
                     "value": false
+                  },
+                  {
+                    "name": "ConsiderExplosion",
+                    "value": true
                   }
                 ]
               },
@@ -20226,8 +20746,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           },
           {
             "name": "Delay",
@@ -20297,8 +20816,7 @@
                   }
                 ]
               }
-            },
-            "valueType": "CHOICE"
+            }
           }
         ]
       },
@@ -20367,14 +20885,17 @@
     ]
   },
   "author": "Izuna",
-  "date": "08/02/2026",
-  "time": "20:27:46",
-  "clientVersion": "0.36.0",
-  "clientCommit": "git-4a044c6",
-  "serverAddress": "pika.host",
+  "date": "19/03/2026",
+  "time": "15:48:21",
+  "clientVersion": "0.36.1",
+  "clientCommit": "git-63128c7",
+  "serverAddress": "jartex.fun",
   "protocolName": "1.21.11",
   "protocolVersion": 774,
-  "type": "Rage",
+  "type": "Legit",
   "status": "Bypassing",
-  "chat": ["Pika Network Fly Bypass Method: Bind Disabler, Bind Fly. Jump into Void, Die, Turn on Disabler (on Countdown) and Fly, Nuke All Beds. Turn off Disabler & Fly."]
+  "chat": [
+    "Aimbot, Auto Clicker and Scaffold etc is safe to use.",
+    "KillAura should be used with caution!"
+  ]
 }
